@@ -1,0 +1,55 @@
+
+ol, ul, li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    display: block;
+}
+img{
+    border: none;
+    display: block;
+}
+
+/* 清除浮动 */
+.clearfloat{
+    zoom: 1;
+}
+.clearfloat:after{
+    display: block;
+    clear: both;
+    content: "";
+    visibility: hidden;
+    height: 0;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+#container {
+    height: 100%;
+    width: 100%;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+}
+
+#sectionHeader {
+    height: 40px;
+    line-height: 40px;
+    background-color: aliceblue;
+}
+
+#sectionBody {
+    flex: 1;
+    background-color: beige;
+}
+
+#sectionFooter {
+    height: 50px;
+    line-height: 50px;
+    background-color: azure;
+}
+
